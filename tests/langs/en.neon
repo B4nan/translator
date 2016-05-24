@@ -1,0 +1,9 @@
+name: English
+plural:
+	count: 2
+	form: '2'
+
+translations:
+	"%s days":
+		- "%s day"
+		- "%s days"

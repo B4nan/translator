@@ -1,0 +1,34 @@
+{
+	"name": "b4nan/translator",
+	"type": "library",
+	"description": "Simple Nette translator, uses Neon translation files",
+	"keywords": ["nette", "b4nan", "translator"],
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "Martin Adámek",
+			"email": "martinadamek59@gmail.com"
+		}
+	],
+	"support": {
+		"email": "martinadamek59@gmail.com",
+		"issues": "https://github.com/B4nan/translator/issues"
+	},
+	"minimum-stability": "stable",
+	"require": {
+		"nette/utils": "2.3.*",
+		"nette/neon": "2.3.*",
+		"nette/caching": "2.3.*"
+	},
+	"require-dev": {
+		"nette/tester": "@dev",
+		"jakub-onderka/php-parallel-lint": "0.*",
+		"jakub-onderka/php-console-highlighter": "0.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"B4nan\\": "src/",
+			"B4nan\\Tests\\": "tests/"
+		}
+	}
+}

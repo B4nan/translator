@@ -1,0 +1,12 @@
+name: Čeština
+plural:
+	count: 3
+	form: '2|5'
+
+translations:
+	"Next": "Další"
+	"%s days":
+		- "%s den"
+		- "%s dny"
+		- "%s dní"
+	"Module %s successfully activated.": "Rozšíření %s úspěšně aktivováno."
