@@ -142,9 +142,11 @@ final class Translator extends \Nette\Object implements ITranslator
 		}
 
 		// perform vsprintf if there are any params
+		$message = str_replace('%label', '$label', $message);
 		if ($count && func_num_args() > 1) {
 			$message = vsprintf($message, array_slice(func_get_args(), 1));
 		}
+		$message = str_replace('$label', '%label', $message);
 
 		// strip all not replaces %s
 		$message = str_replace('%s', '', $message);
